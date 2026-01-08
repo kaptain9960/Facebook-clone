@@ -1,538 +1,684 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="socialbook_img/images/facebook.png" type="image/x-icon">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="socialbook_img/images/facebook.png"
+      type="image/x-icon"
+    />
     <title>Facebook Clone</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css" />
     <!-- Adding font awesome script for address personalization -->
-    <script src="https://kit.fontawesome.com/c4254e24a8.js" crossorigin="anonymous"></script>
-</head>
-<body>
+    <script
+      src="https://kit.fontawesome.com/c4254e24a8.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
     <div class="nav">
-        <nav>
-            <div class="nav-left">
-                <img class="logo" src="socialbook_img/images/facebook.png" alt="facebook logo">
-                <ul>
-                    <li>
-                        <img class="notification" src="socialbook_img/images/notification.png" alt="notification image">
-                    </li>
-                    <li>
-                        <img class="inbox" src="socialbook_img/images/inbox.png" alt="">
-                    </li>
-                    <li>
-                        <img class="video" src="socialbook_img/images/video.png" alt="">
-                    </li>
-                </ul>
-            </div>
-
-            <div class="nav-right">
-                <div class="search-box">
-                    <img src="socialbook_img/images/search.png" alt="search icon">
-                    <input type="text" placeholder="search">
-                </div>
-
-                <div class="nav-user-icon online" onclick="settingsMenuToggle()">
-                    <img src="socialbook_img/images/profile-pic.png" alt="profile-picture">
-                </div>
-            </div>
-
-            <!-- adding a drop down button here -->
-            <div class="settings-menu">
-                <div id="dark-btn" class="dark-btn-on">
-                    <span>
-
-                    </span>
-                </div>
-
-
-
-
-                <div class="settings-menu-inner">
-                    <div class="user-profile">
-                        <img src="socialbook_img/images/profile-pic.png" alt="">
-                        <div>
-                            <p>
-                                Sir. Kaptain
-                            </p>
-                            <a href="profile.html">See profile</a>
-
-                        </div>
-                    </div>    
-                    <hr>
-                    
-                    <div class="user-profile">
-                        <img src="socialbook_img/images/feedback.png" alt="">
-                        <div>
-                            <p>
-                                Give Feedback
-                            </p>
-                            <a href="#">Help us to improve the design</a>
-
-                        </div>
-                    </div> 
-                    <hr>
-
-
-                    <!-- settings 1 -->
-                    <div class="settings-links">
-                        <img src="socialbook_img/images/setting.png" class="settings-icon" alt="">
-                        <a href="#">Settings & Privacy <img src="socialbook_img/images/arrow.png" width="10px" alt=""></a>
-                    </div>
-
-
-                    <!-- settings 2 -->
-                    <div class="settings-links">
-                        <img src="socialbook_img/images/help.png" class="settings-icon" alt="">
-                        <a href="#">Help & Support <img src="socialbook_img/images/arrow.png" width="10px" alt=""></a>
-                    </div>
-
-                    <!-- settings 3 -->
-                    <div class="settings-links">
-                        <img src="socialbook_img/images/display.png" class="settings-icon" alt="">
-                        <a href="#">Display & Accessibility <img src="socialbook_img/images/arrow.png" width="10px" alt=""></a>
-                    </div>
-
-                    <!-- settings 4 -->
-                    <div class="settings-links">
-                        <img src="socialbook_img/images/logout.png" class="settings-icon" alt="">
-                        <a href="#">Logout <img src="socialbook_img/images/arrow.png" width="10px" alt=""></a>
-                    </div>
-
-
-
-
-
-                </div>
-            </div>
-                
-        </nav>
-
-
-        <div class="container">
-
-            <!--------- left-sidebar -------------->
-            <div class="left-sidebar">
-                <div class="links">
-                    <a href="#"><img src="socialbook_img/images/news.png" alt="news"> latest News</a>
-                    <a href="#"><img src="socialbook_img/images/friends.png" alt="friends"> Friends</a>
-                    <a href="#"><img src="socialbook_img/images/group.png" alt="groups"> Groups</a>
-                    <a href="#"><img src="socialbook_img/images/marketplace.png" alt="marketplace"> Marketplace</a>
-                    <a href="#"><img src="socialbook_img/images/watch.png" alt="news"> Watch</a>
-                    <a href="#">See More</a>
-                </div>
-
-                <div class="shortcut-links" id="shortcut-links">
-                    <p> Your shortcut</p>
-                    <a href="#"><img src="socialbook_img/images/shortcut-1.png" alt="shortcut"> Web developers</a>
-                    <a href="#"><img src="socialbook_img/images/shortcut-2.png" alt="shortcut"> Web designers</a>
-                    <a href="#"><img src="socialbook_img/images/shortcut-3.png" alt="shortcut"> Customer service</a>
-                    <a href="#"><img src="socialbook_img/images/shortcut-4.png" alt="shortcut"> Web analyst</a>
-                </div>
-
-
-            </div>
-
-            
-
-            <!-- main content page -->
-            <div class="main-content">
-                <div class="story-gallary">
-                    <div class="story story1">
-                        <img src="socialbook_img/images/upload.png" alt="">
-                        <p>Add Story</p>
-                    </div>
-
-                    <div class="story story2">
-                        <img src="socialbook_img/images/member-1.png" alt="">
-                        <p>Kunle</p>
-                    </div>
-
-                    <div class="story story3">
-                        <img src="socialbook_img/images/member-2.png" alt="">
-                        <p>Femi</p>
-                    </div>
-
-                    <div class="story story4">
-                        <img src="socialbook_img/images/member-3.png" alt="">
-                        <p>Tasha</p>
-                    </div>
-
-                    <div class="story story5">
-                        <img src="socialbook_img/images/member-4.png" alt="">
-                        <p>Benedict</p>
-                    </div>
-                </div>
-
-                    <!-- container and section for the main page views -->
-                <div class="write-post-container">
-                    <div class="user-profile">
-                        <img src="socialbook_img/images/profile-pic.png" alt="">
-                        <div>
-                            <p>
-                                Sir. Kaptain
-                            </p>
-
-                            <small>
-                                <!-- down arrow icon also attached from the fontawesome site whose script link is above -->
-                                public <i class="fa-solid fa-chevron-down"></i>
-                            </small>
-                        </div>
-                    </div>
-
-                    <div class="post-input-container">
-                        <textarea placeholder="What's on your mind Kaptain?"  rows="3"></textarea>
-
-                        <div class="add-post-link">
-                            <a href="#"><img src="socialbook_img/images/live-video.png" alt="">Live Video</a>
-                            <a href="#"><img src="socialbook_img/images/photo.png" alt="">Photo/Video</a>
-                            <a href="#"><img src="socialbook_img/images/feeling.png" alt="">Feeling/Activity</a>
-                        </div>
-                    </div>
-
-                </div>
-
-
-                <!-- post 1 -->
-                <div class="post-container">
-                    <div class="post-row">
-                        <div class="user-profile">
-                            <img src="socialbook_img/images/profile-pic.png" alt="">
-                            <div>
-                                <p>
-                                    Sir. Kaptain
-                                </p>
-
-                                <span>
-                                    January 6 2026, 15:17
-                                </span>
-                            </div>
-                        </div>
-
-                        <!-- adding an icon to the right side on the post field top -->
-                         <a href="#"><i class="fa-solid fa-ellipsis-v"></i></a>
-                    </div>
-
-                  
-
-                    <p class="post-text">The journey wasn't easy but i did it after all. omo eeh make una learn ooh cuz road no too clear for the Nigeria wey we dey like this.<a href="#">#Webdevelopment</a> <a href="#">#Borderless UNN</a> <a href="#">#UNN</a></p>
-                    <img src="socialbook_img/images/feed-image-1.png" alt="" class="post-img">
-
-                    <div class="post-row">
-                        <!-- activity icons and the comment sections and the numbers -->
-                        <div class="activity-icons">
-                            <div>
-                                <img src="socialbook_img/images/like-blue.png" alt="" class="like-icon"> 125
-                                <img src="socialbook_img/images/comments.png" alt="" class="comment-icon"> 45
-                                <img src="socialbook_img/images/share.png" alt="" class="share-icon"> 36
-
-                            </div>
-                            
-                        </div>
-
-
-                        <div class="post-profile-icon">
-                            <img src="socialbook_img/images/profile-pic.png" alt="" class="profile-pic">
-                            <!-- i will change the icon source from fontawesome to something else later -->
-                            <i class="fa-solid fa-chevron-down"></i>
-                        </div>
-                    </div>
-                </div>
-
-
-                <!-- post 2 -->
-                 <div class="post-container">
-                    <div class="post-row">
-                        <div class="user-profile">
-                            <img src="socialbook_img/images/profile-pic.png" alt="">
-                            <div>
-                                <p>
-                                    Nnachi Kosi Daniels
-                                </p>
-
-                                <span>
-                                    Febuary 6 2026, 15:24
-                                </span>
-                            </div>
-                        </div>
-
-                        <!-- adding an icon to the right side on the post field top -->
-                         <a href="#"><i class="fa-solid fa-ellipsis-v"></i></a>
-                    </div>
-
-                  
-
-                    <p class="post-text">🌞 Good morning, fam!
-                    Every new day is another chance to get closer to your goals. Stay focused, stay consistent, and don’t forget to enjoy the journey. 
-                    Small steps today can lead to big wins tomorrow 💪✨<a href="#">#Webdevelopment</a> <a href="#">#Borderless UNN</a> <a href="#">#UNN</a></p>
-                    <img src="socialbook_img/images/feed-image-2.png" alt="" class="post-img">
-
-                    <div class="post-row">
-                        <!-- activity icons and the comment sections and the numbers -->
-                        <div class="activity-icons">
-                            <div>
-                                <img src="socialbook_img/images/like-blue.png" alt="" class="like-icon"> 125
-                                <img src="socialbook_img/images/comments.png" alt="" class="comment-icon"> 45
-                                <img src="socialbook_img/images/share.png" alt="" class="share-icon"> 36
-
-                            </div>
-                            
-                        </div>
-
-
-                        <div class="post-profile-icon">
-                            <img src="socialbook_img/images/profile-pic.png" alt="" class="profile-pic">
-                            <!-- i will change the icon source from fontawesome to something else later -->
-                            <i class="fa-solid fa-chevron-down"></i>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- post 3 -->
-                 <div class="post-container">
-                    <div class="post-row">
-                        <div class="user-profile">
-                            <img src="socialbook_img/images/profile-pic.png" alt="">
-                            <div>
-                                <p>
-                                    Ozioko Tochukwu Martha
-                                </p>
-
-                                <span>
-                                    March 6 2026, 12:45
-                                </span>
-                            </div>
-                        </div>
-
-                        <!-- adding an icon to the right side on the post field top -->
-                         <a href="#"><i class="fa-solid fa-ellipsis-v"></i></a>
-                    </div>
-
-                  
-
-                    <p class="post-text">Spent some time today improving my coding skills and building something exciting. The process isn’t always easy, but every bug fixed is a lesson learned. Growth happens one line of code at a time<a href="#">#Webdevelopment</a> <a href="#">#Borderless UNN</a> <a href="#">#UNN</a></p>
-                    <img src="socialbook_img/images/feed-image-3.png" alt="" class="post-img">
-
-                    <div class="post-row">
-                        <!-- activity icons and the comment sections and the numbers -->
-                        <div class="activity-icons">
-                            <div>
-                                <img src="socialbook_img/images/like-blue.png" alt="" class="like-icon"> 125
-                                <img src="socialbook_img/images/comments.png" alt="" class="comment-icon"> 45
-                                <img src="socialbook_img/images/share.png" alt="" class="share-icon"> 36
-
-                            </div>
-                            
-                        </div>
-
-
-                        <div class="post-profile-icon">
-                            <img src="socialbook_img/images/profile-pic.png" alt="" class="profile-pic">
-                            <!-- i will change the icon source from fontawesome to something else later -->
-                            <i class="fa-solid fa-chevron-down"></i>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- post 4 -->
-                 <div class="post-container">
-                    <div class="post-row">
-                        <div class="user-profile">
-                            <img src="socialbook_img/images/profile-pic.png" alt="">
-                            <div>
-                                <p>
-                                    Talent Courage
-                                </p>
-
-                                <span>
-                                    April 6 2026, 15:30
-                                </span>
-                            </div>
-                        </div>
-
-                        <!-- adding an icon to the right side on the post field top -->
-                         <a href="#"><i class="fa-solid fa-ellipsis-v"></i></a>
-                    </div>
-
-                  
-
-                    <p class="post-text">Sometimes all you need is a quiet moment to reflect. Life moves fast, but it’s important to slow down, breathe, and appreciate how far you’ve come. Progress is progress, no matter how small 🌱<a href="#">#Webdevelopment</a> <a href="#">#Borderless UNN</a> <a href="#">#UNN</a></p>
-                    <img src="socialbook_img/images/feed-image-4.png" alt="" class="post-img">
-
-                    <div class="post-row">
-                        <!-- activity icons and the comment sections and the numbers -->
-                        <div class="activity-icons">
-                            <div>
-                                <img src="socialbook_img/images/like-blue.png" alt="" class="like-icon"> 125
-                                <img src="socialbook_img/images/comments.png" alt="" class="comment-icon"> 45
-                                <img src="socialbook_img/images/share.png" alt="" class="share-icon"> 36
-
-                            </div>
-                            
-                        </div>
-
-
-                        <div class="post-profile-icon">
-                            <img src="socialbook_img/images/profile-pic.png" alt="" class="profile-pic">
-                            <!-- i will change the icon source from fontawesome to something else later -->
-                            <i class="fa-solid fa-chevron-down"></i>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- post 5 -->
-                 <div class="post-container">
-                    <div class="post-row">
-                        <div class="user-profile">
-                            <img src="socialbook_img/images/profile-pic.png" alt="">
-                            <div>
-                                <p>
-                                    Sir. Kaptain
-                                </p>
-
-                                <span>
-                                    May 6 2026, 02:17
-                                </span>
-                            </div>
-                        </div>
-
-                        <!-- adding an icon to the right side on the post field top -->
-                         <a href="#"><i class="fa-solid fa-ellipsis-v"></i></a>
-                    </div>
-
-                  
-
-                    <p class="post-text">🎉 Feeling grateful today!
-                    Celebrating small wins and personal growth. Hard work may not pay off instantly, but consistency always shows results. Cheers to more progress and positive vibes ahead 🥂✨<a href="#">#Webdevelopment</a> <a href="#">#Borderless UNN</a> <a href="#">#UNN</a></p>
-                    <img src="socialbook_img/images/feed-image-5.png" alt="" class="post-img">
-
-                    <div class="post-row">
-                        <!-- activity icons and the comment sections and the numbers -->
-                        <div class="activity-icons">
-                            <div>
-                                <img src="socialbook_img/images/like-blue.png" alt="" class="like-icon"> 125
-                                <img src="socialbook_img/images/comments.png" alt="" class="comment-icon"> 45
-                                <img src="socialbook_img/images/share.png" alt="" class="share-icon"> 36
-
-                            </div>
-                            
-                        </div>
-
-
-                        <div class="post-profile-icon">
-                            <img src="socialbook_img/images/profile-pic.png" alt="" class="profile-pic">
-                            <!-- i will change the icon source from fontawesome to something else later -->
-                            <i class="fa-solid fa-chevron-down"></i>
-                        </div>
-                    </div>
-                </div>
-
-                <button type="button" class="load-more-button">Load more</button>
-
-
-
-                 
-
-
-
-            </div>
-
-
-
-            <!--------- right-sidebar -------------->
-            <div class="right-sidebar">
-                <div class="sidebar-title" id= "sidebar-title">
-                    <h4>Events</h4>
-                    <a href="#">See All</a>
-
-                </div>
-
-                <div class="event">
-                    <div class="left-event">
-                        <h3>18</h3>
-
-                        <span>March</span>
-                    </div>
-
-
-                    <div class="right-event">
-
-                        <h4>Social Media Carniva</h4>
-                        <p><i class="fas fa-map-marker-alt" ></i>Lugbe Abuja</p>
-                        <a href="#">More Infor</a>
-                    </div>
-                </div>
-
-                    <!-- event 2 -->
-                <div class="event">
-                    <div class="left-event">
-                        <h3>19</h3>
-                        <span>October</span>
-                    </div>
-
-
-                    <div class="right-event">
-
-                        <h4>Social Media Management</h4>
-
-                        <p><i class="fas fa-map-marker-alt" ></i>University market road Enugu Nigeria.</p>
-                        <a href="#">More Infor</a>
-                    </div>
-                </div>
-
-                    <!-- advertisement section for facebook clone -->
-                <div class="sidebar-title" id= "sidebar-title">
-                    <h4>Advertisement</h4>
-                    <a href="#">Close</a>
-
-                </div>
-                <img class="sidebar-ads" src="socialbook_img/images/advertisement.png" alt="">
-
-                    <!-- Conversions -->
-                <div class="sidebar-title" id= "sidebar-title">
-                    <h4>Conversions</h4>
-                    <a href="#">Hide Chat</a>
-                </div>
-
-                <!-- site users and chat messages -->
-
-                <div class="online-list">
-                    <div class="online">
-                        <img src="socialbook_img/images/member-1.png" alt="">
-                    </div>
-                    <p>Jammy Kunle</p>
-                </div>
-
-                <div class="online-list">
-                    <div class="online">
-                        <img src="socialbook_img/images/member-2.png" alt="">
-                    </div>
-                    <p>Sir. Kaptain</p>
-                </div>
-
-                <div class="online-list">
-                    <div class="online">
-                        <img src="socialbook_img/images/member-3.png" alt="">
-                    </div>
-                    <p>Princess Igwesi</p>
-                </div>
-
-
-
-
-
-
-            </div>
+      <nav>
+        <div class="nav-left">
+          <a href="index.html">
+            <img
+              class="logo"
+              src="socialbook_img/images/facebook.png"
+              alt="facebook logo"
+            />
+          </a>
+          <ul>
+            <li>
+              <img
+                class="notification"
+                src="socialbook_img/images/notification.png"
+                alt="notification image"
+              />
+            </li>
+            <li>
+              <img class="inbox" src="socialbook_img/images/inbox.png" alt="" />
+            </li>
+            <li>
+              <img class="video" src="socialbook_img/images/video.png" alt="" />
+            </li>
+          </ul>
         </div>
+
+        <div class="nav-right">
+          <div class="search-box">
+            <img src="socialbook_img/images/search.png" alt="search icon" />
+            <input type="text" placeholder="search" />
+          </div>
+
+          <div class="nav-user-icon online" onclick="settingsMenuToggle()">
+            <img
+              src="socialbook_img/images/profile-pic.jpeg"
+              alt="profile-picture"
+            />
+          </div>
+        </div>
+
+        <!-- adding a drop down button here -->
+        <div class="settings-menu">
+          <div id="dark-btn" class="dark-btn-on">
+            <span> </span>
+          </div>
+
+          <div class="settings-menu-inner">
+            <div class="user-profile">
+              <img src="socialbook_img/images/profile-pic.jpeg" alt="" />
+              <div>
+                <p>Sir. Kaptain</p>
+                <a href="profile.html">See profile</a>
+              </div>
+            </div>
+            <hr />
+
+            <div class="user-profile">
+              <img src="socialbook_img/images/feedback.png" alt="" />
+              <div>
+                <p>Give Feedback</p>
+                <a href="#">Help us to improve the design</a>
+              </div>
+            </div>
+            <hr />
+
+            <!-- settings 1 -->
+            <div class="settings-links">
+              <img
+                src="socialbook_img/images/setting.png"
+                class="settings-icon"
+                alt=""
+              />
+              <a href="#"
+                >Settings & Privacy
+                <img src="socialbook_img/images/arrow.png" width="10px" alt=""
+              /></a>
+            </div>
+
+            <!-- settings 2 -->
+            <div class="settings-links">
+              <img
+                src="socialbook_img/images/help.png"
+                class="settings-icon"
+                alt=""
+              />
+              <a href="#"
+                >Help & Support
+                <img src="socialbook_img/images/arrow.png" width="10px" alt=""
+              /></a>
+            </div>
+
+            <!-- settings 3 -->
+            <div class="settings-links">
+              <img
+                src="socialbook_img/images/display.png"
+                class="settings-icon"
+                alt=""
+              />
+              <a href="#"
+                >Display & Accessibility
+                <img src="socialbook_img/images/arrow.png" width="10px" alt=""
+              /></a>
+            </div>
+
+            <!-- settings 4 -->
+            <div class="settings-links">
+              <img
+                src="socialbook_img/images/logout.png"
+                class="settings-icon"
+                alt=""
+              />
+              <a href="#"
+                >Logout
+                <img src="socialbook_img/images/arrow.png" width="10px" alt=""
+              /></a>
+            </div>
+          </div>
+        </div>
+      </nav>
+
+      <div class="container">
+        <!--------- left-sidebar -------------->
+        <div class="left-sidebar">
+          <div class="links">
+            <a href="#"
+              ><img src="socialbook_img/images/news.png" alt="news" /> latest
+              News</a
+            >
+            <a href="#"
+              ><img src="socialbook_img/images/friends.png" alt="friends" />
+              Friends</a
+            >
+            <a href="#"
+              ><img src="socialbook_img/images/group.png" alt="groups" />
+              Groups</a
+            >
+            <a href="#"
+              ><img
+                src="socialbook_img/images/marketplace.png"
+                alt="marketplace"
+              />
+              Marketplace</a
+            >
+            <a href="#"
+              ><img src="socialbook_img/images/watch.png" alt="news" /> Watch</a
+            >
+            <a href="#">See More</a>
+          </div>
+
+          <div class="shortcut-links" id="shortcut-links">
+            <p>Your shortcut</p>
+            <a href="#"
+              ><img src="socialbook_img/images/shortcut-1.png" alt="shortcut" />
+              Web developers</a
+            >
+            <a href="#"
+              ><img src="socialbook_img/images/shortcut-2.png" alt="shortcut" />
+              Web designers</a
+            >
+            <a href="#"
+              ><img src="socialbook_img/images/shortcut-3.png" alt="shortcut" />
+              Customer service</a
+            >
+            <a href="#"
+              ><img src="socialbook_img/images/shortcut-4.png" alt="shortcut" />
+              Web analyst</a
+            >
+          </div>
+        </div>
+
+        <!-- main content page -->
+        <div class="main-content">
+          <div class="story-gallary">
+            <div class="story story1">
+              <img src="socialbook_img/images/upload.png" alt="" />
+              <p>Add Story</p>
+            </div>
+
+            <div class="story story2">
+              <img src="socialbook_img/images/member-1.png" alt="" />
+              <p>Kunle</p>
+            </div>
+
+            <div class="story story3">
+              <img src="socialbook_img/images/member-2.png" alt="" />
+              <p>Femi</p>
+            </div>
+
+            <div class="story story4">
+              <img src="socialbook_img/images/member-3.png" alt="" />
+              <p>Tasha</p>
+            </div>
+
+            <div class="story story5">
+              <img src="socialbook_img/images/member-4.png" alt="" />
+              <p>Benedict</p>
+            </div>
+          </div>
+
+          <!-- container and section for the main page views -->
+          <div class="write-post-container">
+            <div class="user-profile">
+              <img src="socialbook_img/images/profile-pic.jpeg" alt="" />
+              <div>
+                <p>Sir. Kaptain</p>
+
+                <small>
+                  <!-- down arrow icon also attached from the fontawesome site whose script link is above -->
+                  public <i class="fa-solid fa-chevron-down"></i>
+                </small>
+              </div>
+            </div>
+
+            <div class="post-input-container">
+              <textarea
+                placeholder="What's on your mind Kaptain?"
+                rows="3"
+              ></textarea>
+
+              <div class="add-post-link">
+                <a href="#"
+                  ><img src="socialbook_img/images/live-video.png" alt="" />Live
+                  Video</a
+                >
+                <a href="#"
+                  ><img
+                    src="socialbook_img/images/photo.png"
+                    alt=""
+                  />Photo/Video</a
+                >
+                <a href="#"
+                  ><img
+                    src="socialbook_img/images/feeling.png"
+                    alt=""
+                  />Feeling/Activity</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <!-- post 1 -->
+          <div class="post-container">
+            <div class="post-row">
+              <div class="user-profile">
+                <img src="socialbook_img/images/profile-pic.jpeg" alt="" />
+                <div>
+                  <p>Sir. Kaptain</p>
+
+                  <span> January 6 2026, 15:17 </span>
+                </div>
+              </div>
+
+              <!-- adding an icon to the right side on the post field top -->
+              <a href="#"><i class="fa-solid fa-ellipsis-v"></i></a>
+            </div>
+
+            <p class="post-text">
+              The journey wasn't easy but i did it after all. omo eeh make una
+              learn ooh cuz road no too clear for the Nigeria wey we dey like
+              this.<a href="#">#Webdevelopment</a>
+              <a href="#">#Borderless UNN</a> <a href="#">#UNN</a>
+            </p>
+            <img
+              src="socialbook_img/images/feed-image-1.png"
+              alt=""
+              class="post-img"
+            />
+
+            <div class="post-row">
+              <!-- activity icons and the comment sections and the numbers -->
+              <div class="activity-icons">
+                <div>
+                  <img
+                    src="socialbook_img/images/like-blue.png"
+                    alt=""
+                    class="like-icon"
+                  />
+                  125
+                  <img
+                    src="socialbook_img/images/comments.png"
+                    alt=""
+                    class="comment-icon"
+                  />
+                  45
+                  <img
+                    src="socialbook_img/images/share.png"
+                    alt=""
+                    class="share-icon"
+                  />
+                  36
+                </div>
+              </div>
+
+              <div class="post-profile-icon">
+                <img
+                  src="socialbook_img/images/profile-pic.jpeg"
+                  alt=""
+                  class="profile-pic"
+                />
+                <!-- i will change the icon source from fontawesome to something else later -->
+                <i class="fa-solid fa-chevron-down"></i>
+              </div>
+            </div>
+          </div>
+
+          <!-- post 2 -->
+          <div class="post-container">
+            <div class="post-row">
+              <div class="user-profile">
+                <img src="socialbook_img/images/profile-pic.jpeg" alt="" />
+                <div>
+                  <p>Nnachi Kosi Daniels</p>
+
+                  <span> Febuary 6 2026, 15:24 </span>
+                </div>
+              </div>
+
+              <!-- adding an icon to the right side on the post field top -->
+              <a href="#"><i class="fa-solid fa-ellipsis-v"></i></a>
+            </div>
+
+            <p class="post-text">
+              🌞 Good morning, fam! Every new day is another chance to get
+              closer to your goals. Stay focused, stay consistent, and don’t
+              forget to enjoy the journey. Small steps today can lead to big
+              wins tomorrow 💪✨<a href="#">#Webdevelopment</a>
+              <a href="#">#Borderless UNN</a> <a href="#">#UNN</a>
+            </p>
+            <img
+              src="socialbook_img/images/feed-image-2.png"
+              alt=""
+              class="post-img"
+            />
+
+            <div class="post-row">
+              <!-- activity icons and the comment sections and the numbers -->
+              <div class="activity-icons">
+                <div>
+                  <img
+                    src="socialbook_img/images/like-blue.png"
+                    alt=""
+                    class="like-icon"
+                  />
+                  125
+                  <img
+                    src="socialbook_img/images/comments.png"
+                    alt=""
+                    class="comment-icon"
+                  />
+                  45
+                  <img
+                    src="socialbook_img/images/share.png"
+                    alt=""
+                    class="share-icon"
+                  />
+                  36
+                </div>
+              </div>
+
+              <div class="post-profile-icon">
+                <img
+                  src="socialbook_img/images/profile-pic.jpeg"
+                  alt=""
+                  class="profile-pic"
+                />
+                <!-- i will change the icon source from fontawesome to something else later -->
+                <i class="fa-solid fa-chevron-down"></i>
+              </div>
+            </div>
+          </div>
+
+          <!-- post 3 -->
+          <div class="post-container">
+            <div class="post-row">
+              <div class="user-profile">
+                <img src="socialbook_img/images/profile-pic.jpeg" alt="" />
+                <div>
+                  <p>Ozioko Tochukwu Martha</p>
+
+                  <span> March 6 2026, 12:45 </span>
+                </div>
+              </div>
+
+              <!-- adding an icon to the right side on the post field top -->
+              <a href="#"><i class="fa-solid fa-ellipsis-v"></i></a>
+            </div>
+
+            <p class="post-text">
+              Spent some time today improving my coding skills and building
+              something exciting. The process isn’t always easy, but every bug
+              fixed is a lesson learned. Growth happens one line of code at a
+              time<a href="#">#Webdevelopment</a>
+              <a href="#">#Borderless UNN</a> <a href="#">#UNN</a>
+            </p>
+            <img
+              src="socialbook_img/images/feed-image-3.png"
+              alt=""
+              class="post-img"
+            />
+
+            <div class="post-row">
+              <!-- activity icons and the comment sections and the numbers -->
+              <div class="activity-icons">
+                <div>
+                  <img
+                    src="socialbook_img/images/like-blue.png"
+                    alt=""
+                    class="like-icon"
+                  />
+                  125
+                  <img
+                    src="socialbook_img/images/comments.png"
+                    alt=""
+                    class="comment-icon"
+                  />
+                  45
+                  <img
+                    src="socialbook_img/images/share.png"
+                    alt=""
+                    class="share-icon"
+                  />
+                  36
+                </div>
+              </div>
+
+              <div class="post-profile-icon">
+                <img
+                  src="socialbook_img/images/profile-pic.jpeg"
+                  alt=""
+                  class="profile-pic"
+                />
+                <!-- i will change the icon source from fontawesome to something else later -->
+                <i class="fa-solid fa-chevron-down"></i>
+              </div>
+            </div>
+          </div>
+
+          <!-- post 4 -->
+          <div class="post-container">
+            <div class="post-row">
+              <div class="user-profile">
+                <img src="socialbook_img/images/profile-pic.jpeg" alt="" />
+                <div>
+                  <p>Talent Courage</p>
+
+                  <span> April 6 2026, 15:30 </span>
+                </div>
+              </div>
+
+              <!-- adding an icon to the right side on the post field top -->
+              <a href="#"><i class="fa-solid fa-ellipsis-v"></i></a>
+            </div>
+
+            <p class="post-text">
+              Sometimes all you need is a quiet moment to reflect. Life moves
+              fast, but it’s important to slow down, breathe, and appreciate how
+              far you’ve come. Progress is progress, no matter how small 🌱<a
+                href="#"
+                >#Webdevelopment</a
+              >
+              <a href="#">#Borderless UNN</a> <a href="#">#UNN</a>
+            </p>
+            <img
+              src="socialbook_img/images/feed-image-4.png"
+              alt=""
+              class="post-img"
+            />
+
+            <div class="post-row">
+              <!-- activity icons and the comment sections and the numbers -->
+              <div class="activity-icons">
+                <div>
+                  <img
+                    src="socialbook_img/images/like-blue.png"
+                    alt=""
+                    class="like-icon"
+                  />
+                  125
+                  <img
+                    src="socialbook_img/images/comments.png"
+                    alt=""
+                    class="comment-icon"
+                  />
+                  45
+                  <img
+                    src="socialbook_img/images/share.png"
+                    alt=""
+                    class="share-icon"
+                  />
+                  36
+                </div>
+              </div>
+
+              <div class="post-profile-icon">
+                <img
+                  src="socialbook_img/images/profile-pic.jpeg"
+                  alt=""
+                  class="profile-pic"
+                />
+                <!-- i will change the icon source from fontawesome to something else later -->
+                <i class="fa-solid fa-chevron-down"></i>
+              </div>
+            </div>
+          </div>
+
+          <!-- post 5 -->
+          <div class="post-container">
+            <div class="post-row">
+              <div class="user-profile">
+                <img src="socialbook_img/images/profile-pic.jpeg" alt="" />
+                <div>
+                  <p>Sir. Kaptain</p>
+
+                  <span> May 6 2026, 02:17 </span>
+                </div>
+              </div>
+
+              <!-- adding an icon to the right side on the post field top -->
+              <a href="#"><i class="fa-solid fa-ellipsis-v"></i></a>
+            </div>
+
+            <p class="post-text">
+              🎉 Feeling grateful today! Celebrating small wins and personal
+              growth. Hard work may not pay off instantly, but consistency
+              always shows results. Cheers to more progress and positive vibes
+              ahead 🥂✨<a href="#">#Webdevelopment</a>
+              <a href="#">#Borderless UNN</a> <a href="#">#UNN</a>
+            </p>
+            <img
+              src="socialbook_img/images/feed-image-5.png"
+              alt=""
+              class="post-img"
+            />
+
+            <div class="post-row">
+              <!-- activity icons and the comment sections and the numbers -->
+              <div class="activity-icons">
+                <div>
+                  <img
+                    src="socialbook_img/images/like-blue.png"
+                    alt=""
+                    class="like-icon"
+                  />
+                  125
+                  <img
+                    src="socialbook_img/images/comments.png"
+                    alt=""
+                    class="comment-icon"
+                  />
+                  45
+                  <img
+                    src="socialbook_img/images/share.png"
+                    alt=""
+                    class="share-icon"
+                  />
+                  36
+                </div>
+              </div>
+
+              <div class="post-profile-icon">
+                <img
+                  src="socialbook_img/images/profile-pic.jpeg"
+                  alt=""
+                  class="profile-pic"
+                />
+                <!-- i will change the icon source from fontawesome to something else later -->
+                <i class="fa-solid fa-chevron-down"></i>
+              </div>
+            </div>
+          </div>
+
+          <button type="button" class="load-more-button">Load more</button>
+        </div>
+
+        <!--------- right-sidebar -------------->
+        <div class="right-sidebar">
+          <div class="sidebar-title" id="sidebar-title">
+            <h4>Events</h4>
+            <a href="#">See All</a>
+          </div>
+
+          <div class="event">
+            <div class="left-event">
+              <h3>18</h3>
+
+              <span>March</span>
+            </div>
+
+            <div class="right-event">
+              <h4>Social Media Carniva</h4>
+              <p><i class="fas fa-map-marker-alt"></i>Lugbe Abuja</p>
+              <a href="#">More Infor</a>
+            </div>
+          </div>
+
+          <!-- event 2 -->
+          <div class="event">
+            <div class="left-event">
+              <h3>19</h3>
+              <span>October</span>
+            </div>
+
+            <div class="right-event">
+              <h4>Social Media Management</h4>
+
+              <p>
+                <i class="fas fa-map-marker-alt"></i>University market road
+                Enugu Nigeria.
+              </p>
+              <a href="#">More Infor</a>
+            </div>
+          </div>
+
+          <!-- advertisement section for facebook clone -->
+          <div class="sidebar-title" id="sidebar-title">
+            <h4>Advertisement</h4>
+            <a href="#">Close</a>
+          </div>
+          <img
+            class="sidebar-ads"
+            src="socialbook_img/images/advertisement.png"
+            alt=""
+          />
+
+          <!-- Conversions -->
+          <div class="sidebar-title" id="sidebar-title">
+            <h4>Conversions</h4>
+            <a href="#">Hide Chat</a>
+          </div>
+
+          <!-- site users and chat messages -->
+
+          <div class="online-list">
+            <div class="online">
+              <img src="socialbook_img/images/member-1.png" alt="" />
+            </div>
+            <p>Jammy Kunle</p>
+          </div>
+
+          <div class="online-list">
+            <div class="online">
+              <img src="socialbook_img/images/member-2.png" alt="" />
+            </div>
+            <p>Sir. Kaptain</p>
+          </div>
+
+          <div class="online-list">
+            <div class="online">
+              <img src="socialbook_img/images/member-3.png" alt="" />
+            </div>
+            <p>Princess Igwesi</p>
+          </div>
+        </div>
+      </div>
     </div>
 
     <!-- adding my company details at this point of the project -->
     <div class="footer">
-        <p>Copyright 2026 - Sir. Kaptain (Facebook Clone)</p>
+      <p>Copyright 2026 - Sir. Kaptain (Facebook Clone)</p>
     </div>
 
-
-<script src="main.js"></script>
-</body>
+    <script src="main.js"></script>
+  </body>
 </html>
